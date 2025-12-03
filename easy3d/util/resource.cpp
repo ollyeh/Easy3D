@@ -36,7 +36,7 @@ namespace easy3d {
     namespace resource {
 
         static std::string easy3d_resource_dir = file_system::convert_to_native_style(Easy3D_RESOURCE_DIR);
-
+        std::cout << easy3d_resource_dir << std::endl;
         bool is_valid_resource_dir(const std::string& dir) {
             return file_system::is_directory(dir) &&
                    file_system::is_directory(dir + "/shaders") &&
