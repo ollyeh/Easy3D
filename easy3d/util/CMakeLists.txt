@@ -49,7 +49,6 @@ target_compile_definitions(easy3d_${module}
         ELPP_THREAD_SAFE
         ELPP_NO_DEFAULT_LOG_FILE
         ELPP_DISABLE_DEFAULT_CRASH_HANDLING
-        "$<BUILD_INTERFACE:Easy3D_RESOURCE_DIR=\"${Easy3D_ROOT}/resources\">"
         "$<INSTALL_INTERFACE:Easy3D_RESOURCE_DIR=\"${Easy3D_INSTALL_RESOURCE_DIR}\">"
         )
 
